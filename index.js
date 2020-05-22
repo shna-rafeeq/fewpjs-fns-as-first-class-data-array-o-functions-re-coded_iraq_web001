@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 function wakeDog(dogName, dogBreed) {
+=======
+lfunction wakeDog(dogName, dogBreed) {
+>>>>>>> 940f7599a0a7e242bbc356fc4b43ede4997819df
   console.log(`Wake ${dogName} the ${dogBreed}`);
   let result = `Wake ${dogName} the ${dogBreed}`;
   return result;
@@ -37,6 +41,7 @@ function unleashDog(dogName, dogBreed) {
 
 const routine = [wakeDog,leashDog,walkToPark,throwFrisbee,walkHome,unleashDog];
 
+<<<<<<< HEAD
 
 
 function exerciseDog(dogName,dogBreed){
@@ -45,6 +50,12 @@ function exerciseDog(dogName,dogBreed){
     newArr.push(routine[i](dogName,dogBreed)); 
   }
   return newArr;
+=======
+function exerciseDog(dogName,dogBreed,routine){
+  for(let i = 0; i < routine.length; i++){
+   routine[i](dogName,dogBreed); 
+  }
+>>>>>>> 940f7599a0a7e242bbc356fc4b43ede4997819df
 }
 
 exerciseDog('Byron','Poodle',routine);
